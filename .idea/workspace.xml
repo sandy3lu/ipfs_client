@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="deabadbc-46fe-4562-a44c-c327e364003b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/assets.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/assets.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/blockservice.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/blockservice.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/commands.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/commands.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/commands/legacy.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/commands/legacy.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands/dag.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands/dag.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands/object.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands/object.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands/unixfs.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands/unixfs.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/coreapi.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/coreapi.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/corehttp.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/corehttp.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/corerepo.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/corerepo.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/coreunix.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/coreunix.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/exchange/bitswap.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/exchange/bitswap.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/exchange/bitswap/testnet.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/exchange/bitswap/testnet.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/exchange/reprovide.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/exchange/reprovide.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/fuse/ipns.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/fuse/ipns.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/fuse/node.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/fuse/node.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/fuse/readonly.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/fuse/readonly.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/mfs.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/mfs.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/namesys.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/namesys.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/namesys/republisher.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/namesys/republisher.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/pin.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/pin.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo/config.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo/config.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo/fsrepo.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo/fsrepo.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo/fsrepo/serialize.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo/fsrepo/serialize.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/storageprove.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/storageprove.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/unixfs/io.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/unixfs/io.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/discovery.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/discovery.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/net/mock.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/net/mock.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/protocol/identify.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/protocol/identify.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/keytransform.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/keytransform.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/syncmount.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/syncmount.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmQViVWBHbU6HmYjXcdNq7tVASCNgdg64ZGcauuDkLCivW/go-ipfs-addr.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmQViVWBHbU6HmYjXcdNq7tVASCNgdg64ZGcauuDkLCivW/go-ipfs-addr.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmYVR3C8DWPHdHxvLtNFYfjsXgaRAdh6hPMNH3KiwCgu4o/go-libp2p-netutil.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmYVR3C8DWPHdHxvLtNFYfjsXgaRAdh6hPMNH3KiwCgu4o/go-libp2p-netutil.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs.a" />
+      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/Qmbkc8BMfEixGCeKRuGGbf34mAjTb9xPmJ8Pm5gHU7ohZ4/go-ds-leveldb.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/Qmbkc8BMfEixGCeKRuGGbf34mAjTb9xPmJ8Pm5gHU7ohZ4/go-ds-leveldb.a" />
+      <change beforePath="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs" afterPath="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/discovery/mdns.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/discovery/mdns.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic/basic_host.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic/basic_host.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/protocol/identify/id.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/protocol/identify/id.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/keytransform/keytransform.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/keytransform/keytransform.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/syncmount/mount.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/syncmount/mount.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn/dial.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn/dial.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm_dial.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm_dial.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket/table.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket/table.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream/client.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream/client.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_bootstrap.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_bootstrap.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_net.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_net.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/lookup.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/lookup.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/notif.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/notif.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/query.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/query.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/routing.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/routing.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit/relay.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit/relay.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/conn.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/conn.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/swarm.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/swarm.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs/flatfs.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs/flatfs.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/Qmbkc8BMfEixGCeKRuGGbf34mAjTb9xPmJ8Pm5gHU7ohZ4/go-ds-leveldb/datastore.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/Qmbkc8BMfEixGCeKRuGGbf34mAjTb9xPmJ8Pm5gHU7ohZ4/go-ds-leveldb/datastore.go" />
+      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmcZfnkapfECQGcLZaf9B79NRg7cRa9EnZh4LSbkCzwNvY/go-cid/cid.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmcZfnkapfECQGcLZaf9B79NRg7cRa9EnZh4LSbkCzwNvY/go-cid/cid.go" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="dial.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn/dial.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="91" column="63" lean-forward="false" selection-start-line="91" selection-start-column="63" selection-end-line="91" selection-end-column="63" />
+              <folding>
+                <element signature="e#14#911#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notif.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/notif.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="56" column="27" lean-forward="false" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+              <folding>
+                <element signature="e#13#262#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket/table.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="124" column="38" lean-forward="false" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="query.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/query.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+              <folding>
+                <element signature="e#13#949#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dht.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="273" column="22" lean-forward="false" selection-start-line="273" selection-start-column="17" selection-end-line="273" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dht_bootstrap.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_bootstrap.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/bootstrap.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="28" column="69" lean-forward="false" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blockservice.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/blockservice/blockservice.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="200" column="26" lean-forward="false" selection-start-line="200" selection-start-column="26" selection-end-line="200" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basic_host.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic/basic_host.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <folding>
+                <element signature="e#19#1228#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="swarm_dial.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm_dial.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>testconnection</find>
+      <find>sent listen addrs to</find>
+      <find>RequestHandler</find>
+      <find>testConnection remotpees</find>
+      <find>Connected</find>
+      <find>addConn</find>
+      <find>printstack</find>
+      <find>protocol negotiation took</find>
+      <find>switch format {</find>
+      <find>loong trySelect</find>
+      <find>newStreamHandler</find>
+      <find>identify identifying observe</find>
+      <find>populateMessage</find>
+      <find>peerstream.Conn</find>
+      <find>loong newConn:</find>
+      <find>got connection:</find>
+      <find>newSingleConn</find>
+      <find>PrintStack</find>
+      <find>peerissn</find>
+      <find>4005</find>
+      <find>Running query with no peers</find>
+      <find>no more bootstrap peers to create</find>
+      <find>not enough bootstrap peers to bo</find>
+      <find>ErrNotEnoughBootstrapPeers</find>
+      <find>QmX5FrqeKPhLT6YwcuDoPsq9H1kCtyzVnsLLYM8jwbYAG8</find>
+      <find>testConnection remotpee</find>
+      <find>findpeer</find>
+      <find>IpfsDHT) bootstrapWorker</find>
+      <find>loong</find>
+      <find>Bootstrap</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>fmt.printLn</replace>
+      <replace>Printf</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/gx/ipfs/QmQPWTeQJnJE7MYu6dJTiNTQRNuqBr41dis6UgY6Uekmgd</dir>
+      <dir>$PROJECT_DIR$/src/gx/ipfs/QmQPWTeQJnJE7MYu6dJTiNTQRNuqBr41dis6UgY6Uekmgd/keccakpg</dir>
+    </dirStrings>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/cmd/ipfs/main.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/pin/set.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/repo/fsrepo/fsrepo.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/cmd/ipfs/daemon.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/coreunix/add.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/repo/config/init.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/builder.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmcZfnkapfECQGcLZaf9B79NRg7cRa9EnZh4LSbkCzwNvY/go-cid/cid.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/unixfs/io/dirbuilder.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/storageprove/aescrypto.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/syncmount/mount.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/pin/pin.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/blockservice/blockservice.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs/flatfs.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/keytransform/keytransform.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/Qmbkc8BMfEixGCeKRuGGbf34mAjTb9xPmJ8Pm5gHU7ohZ4/go-ds-leveldb/datastore.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/cmd/ipfs/init.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/storageprove/prover.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket/table.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/routing.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/exchange/reprovide/reprovide.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/namesys/publisher.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/query.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/limiter.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm_dial.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/discovery/mdns.go" />
+        <option value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/core.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_net.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/swarm.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit/relay.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit/notify.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/lookup.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream/client.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn/dial.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/protocol/identify/id.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/conn.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic/basic_host.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/notif.go" />
+        <option value="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_bootstrap.go" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="992" />
+    <option name="y" value="-4" />
+    <option name="width" value="928" />
+    <option name="height" value="976" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../go-ipfs-sn" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="GO_FMT" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build cmd/" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="go-ipfs" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <filePath value="$PROJECT_DIR$/" />
+      <directory value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/cmd" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="go-ipfs" />
+      <working_directory value="$PROJECT_DIR$/../go-ipfs-sn/" />
+      <go_parameters value="-i" />
+      <parameters value="daemon -D" />
+      <envs>
+        <env name="IPFS_PATH" value="$USER_HOME$/tmp2/ipfstest11" />
+      </envs>
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/cmd/ipfs/main.go" />
+      <package value="github.com/ipfs/go-ipfs/cmd/ipfs" />
+      <directory value="$PROJECT_DIR$/" />
+      <output_directory value="$PROJECT_DIR$/../../tmp2" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Go Build.go build cmd/" />
+      <item index="1" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Go Build.go build main.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Build.go build cmd/" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1855" height="976" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22945395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29090908" sideWeight="0.5019326" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45399517" sideWeight="0.49806738" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292978" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27413127" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37046006" sideWeight="0.4980695" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/filestore/fsrefstore.go</url>
+          <line>205</line>
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/filestore/fsrefstore.go</url>
+          <line>123</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/filestore/fsrefstore.go</url>
+          <line>109</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/filestore/fsrefstore.go</url>
+          <line>152</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/filestore/fsrefstore.go</url>
+          <line>209</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/filestore/fsrefstore.go</url>
+          <line>194</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/filestore/fsrefstore.go</url>
+          <line>235</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/filestore/fsrefstore.go</url>
+          <line>60</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/filestore/filestore.go</url>
+          <line>139</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/filestore/filestore.go</url>
+          <line>172</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/filestore/filestore.go</url>
+          <line>192</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/repo/fsrepo/fsrepo.go</url>
+          <line>481</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/blockservice/blockservice.go</url>
+          <line>101</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/blockservice/blockservice.go</url>
+          <line>159</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/commands/add.go</url>
+          <line>324</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../go/src/gx/ipfs/QmabLouZTZwhfALuBcssPvkzhbYGMb4394huT7HY4LQ6d3/go-ipfs-cmds/cli/run.go</url>
+          <line>19</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/coreunix/add.go</url>
+          <line>586</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../go/src/gx/ipfs/QmTVDM4LCSUMFNQzbDLL9zQwp8usE6QHymFdh3h8vL9v6b/go-ipfs-blockstore/arc_cache.go</url>
+          <line>102</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/cmd/ipfs/daemon.go</url>
+          <line>253</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmTVDM4LCSUMFNQzbDLL9zQwp8usE6QHymFdh3h8vL9v6b/go-ipfs-blockstore/arc_cache.go</url>
+          <line>106</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/Qmc74pRHvndTDAB5nXztWAV7vs5j1obvCb9ejfQzXp9USX/retry-datastore/datastore.go</url>
+          <line>49</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/commands/add.go</url>
+          <line>351</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/pin/pin.go</url>
+          <line>442</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/exchange/bitswap/wantlist/wantlist.go</url>
+          <line>66</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/Qmej7nf81hi2x2tvjRBF3mcp74sQyuDH4VMYDGd1YtXjb2/go-block-format/blocks.go</url>
+          <line>36</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs/flatfs.go</url>
+          <line>393</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/importer/balanced/builder.go</url>
+          <line>91</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/merkledag/node.go</url>
+          <line>111</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/coreunix/add.go</url>
+          <line>393</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/coreunix/add.go</url>
+          <line>421</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/mfs/ops.go</url>
+          <line>97</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/mfs/dir.go</url>
+          <line>365</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/unixfs/hamt/hamt.go</url>
+          <line>226</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs/flatfs.go</url>
+          <line>86</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs/flatfs.go</url>
+          <line>108</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/corerepo/pinning.go</url>
+          <line>35</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/coreunix/add.go</url>
+          <line>442</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs/flatfs.go</url>
+          <line>190</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/commands/add.go</url>
+          <line>418</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs/flatfs.go</url>
+          <line>263</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/importer/balanced/builder.go</url>
+          <line>44</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmTVDM4LCSUMFNQzbDLL9zQwp8usE6QHymFdh3h8vL9v6b/go-ipfs-blockstore/blockstore.go</url>
+          <line>151</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/coreunix/add.go</url>
+          <line>406</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/coreunix/add.go</url>
+          <line>405</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file:///usr/local/go/src/os/file.go</url>
+          <line>99</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file:///usr/local/go/src/os/file.go</url>
+          <line>102</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file:///usr/local/go/src/os/file_unix.go</url>
+          <line>216</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs/flatfs.go</url>
+          <line>280</line>
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/pin/set.go</url>
+          <line>286</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs/flatfs.go</url>
+          <line>245</line>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/repo/fsrepo/fsrepo.go</url>
+          <line>259</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/repo/fsrepo/fsrepo.go</url>
+          <line>250</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/repo/fsrepo/fsrepo.go</url>
+          <line>277</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/cmd/ipfs/init.go</url>
+          <line>99</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/assets/assets.go</url>
+          <line>77</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/pin/pin.go</url>
+          <line>580</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/pin/pin.go</url>
+          <line>583</line>
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/pin/pin.go</url>
+          <line>216</line>
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/pin/set.go</url>
+          <line>147</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_bootstrap.go</url>
+          <line>92</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_bootstrap.go</url>
+          <line>121</line>
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_bootstrap.go</url>
+          <line>135</line>
+          <option name="timeStamp" value="173" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/routing.go</url>
+          <line>439</line>
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/namesys/republisher/repub.go</url>
+          <line>77</line>
+          <option name="timeStamp" value="175" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_net.go</url>
+          <line>254</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/routing.go</url>
+          <line>467</line>
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream/client.go</url>
+          <line>63</line>
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn/dial.go</url>
+          <line>83</line>
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmNSWW3Sb4eju4o2djPQ1L1c2Zj9XN9sMYJL8r1cbxdc6b/go-addr-util/filter.go</url>
+          <line>22</line>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/bootstrap.go</url>
+          <line>153</line>
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/dial_sync.go</url>
+          <line>75</line>
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/routed/routed.go</url>
+          <line>60</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="194" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/exchange/reprovide/reprovide.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="87" column="24" lean-forward="false" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/namesys/publisher.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/pb/dht.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="138" column="42" lean-forward="false" selection-start-line="138" selection-start-column="42" selection-end-line="138" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmZoWKhxUmZ2seW4BzX6fJkNR8hh9PsGModr7q171yq2SS/go-libp2p-peer/peer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/dial_sync.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/limiter.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/routed/routed.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm_net.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/discovery/mdns.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="155" column="73" lean-forward="false" selection-start-line="155" selection-start-column="73" selection-end-line="155" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/builder.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="143" column="0" lean-forward="false" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/core.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="269" column="33" lean-forward="false" selection-start-line="269" selection-start-column="33" selection-end-line="269" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmToCvh5eJtoDheMggre7b2zeFCJ6tAyB82YVs457cqoUE/go-libp2p-interface-conn/interface.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm_conn.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="78" column="33" lean-forward="true" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmUkfaKMw9rBRvYGrohn9HqYwZjzAasV4vM6bda8tiHCmq/go-multiplex/multiplex.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="172" column="21" lean-forward="false" selection-start-line="172" selection-start-column="21" selection-end-line="172" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/Qmc14vuKyGqX27RvBhekYytxSFJpaEgQVuVJgKSm69MEix/go-smux-multiplex/multiplex.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit/relay_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="421" column="48" lean-forward="false" selection-start-line="421" selection-start-column="48" selection-end-line="421" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm_stream.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVxf27kucSvCLiCq6dAXjDU2WG3xZN9ae7Ny6osroP28u/yamux/session.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="87" column="5" lean-forward="false" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVxf27kucSvCLiCq6dAXjDU2WG3xZN9ae7Ny6osroP28u/yamux/mux.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="65" column="5" lean-forward="false" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmNWCEvi7bPRcvqAV8AKLGVNoQdArWi7NJayka2SM4XtRe/go-smux-yamux/yamux.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="56" column="20" lean-forward="false" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmY9JXR3FupnYAYJWK9aMr9bCpqWKcToQ1tz8DVGTrHpHw/go-stream-muxer/muxer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVxtCwKFMmwcjhQXsGj6m4JAW7nGb9hRoErH9jpgqcLxA/go-libp2p-transport/transport.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit/pb/relay.pb.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1545">
+          <caret line="105" column="4" lean-forward="false" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmXfkENeeBvh3zYA51MaSdGUdBjhQ99cP5WQe8zgr6wchG/go-libp2p-net/interface.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="121" column="4" lean-forward="false" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit/transport.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_net.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit/relay.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit/notify.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/lookup.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="65" column="46" lean-forward="false" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+          <folding>
+            <element signature="e#21#54#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream/multistream.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-760">
+          <caret line="155" column="29" lean-forward="false" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVxf27kucSvCLiCq6dAXjDU2WG3xZN9ae7Ny6osroP28u/yamux/addr.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/go/src/net/net.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="127" column="8" lean-forward="false" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/listener.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="269" column="0" lean-forward="false" selection-start-line="269" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/swarm.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="265" column="16" lean-forward="false" selection-start-line="265" selection-start-column="16" selection-end-line="265" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/stream.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="36" column="48" lean-forward="false" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn/listen.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="142" column="32" lean-forward="false" selection-start-line="142" selection-start-column="32" selection-end-line="142" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn/conn.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/protocol/identify/id.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/conn.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic/basic_host.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#19#1228#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm_dial.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/bootstrap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="28" column="69" lean-forward="false" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/blockservice/blockservice.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="200" column="26" lean-forward="false" selection-start-line="200" selection-start-column="26" selection-end-line="200" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/query.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding>
+            <element signature="e#13#949#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="273" column="22" lean-forward="false" selection-start-line="273" selection-start-column="17" selection-end-line="273" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn/dial.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="91" column="63" lean-forward="false" selection-start-line="91" selection-start-column="63" selection-end-line="91" selection-end-column="63" />
+          <folding>
+            <element signature="e#14#911#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/notif.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="56" column="27" lean-forward="false" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+          <folding>
+            <element signature="e#13#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket/table.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="124" column="38" lean-forward="false" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_bootstrap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

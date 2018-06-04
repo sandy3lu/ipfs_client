@@ -3,6 +3,7 @@ package multistream
 import (
 	"errors"
 	"io"
+	"fmt"
 )
 
 var ErrNotSupported = errors.New("protocol not supported")
@@ -60,6 +61,9 @@ func trySelect(proto string, rwc io.ReadWriteCloser) error {
 	}
 
 	tok, err := ReadNextToken(rwc)
+	fmt.Println("loong trySelect1 tok: ", tok)
+	fmt.Println("loong trySelect2 proto: ", proto)
+	fmt.Println("loong trySelect3 rwc: ", rwc)
 	if err != nil {
 		return err
 	}

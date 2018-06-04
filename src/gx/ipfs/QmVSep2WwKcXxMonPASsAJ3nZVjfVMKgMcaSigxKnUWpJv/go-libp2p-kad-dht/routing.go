@@ -504,7 +504,7 @@ func (dht *IpfsDHT) FindPeer(ctx context.Context, id peer.ID) (_ pstore.PeerInfo
 		return pstore.PeerInfo{}, err
 	}
 
-	log.Debugf("FindPeer %v %v", id, result.success)
+	fmt.Printf("loong FindPeer %v %v", id, result.success)
 	if result.peer.ID == "" {
 		return pstore.PeerInfo{}, routing.ErrNotFound
 	}

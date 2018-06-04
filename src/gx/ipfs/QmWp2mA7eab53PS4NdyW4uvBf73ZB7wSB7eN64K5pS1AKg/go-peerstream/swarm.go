@@ -8,6 +8,7 @@ import (
 
 	tpt "gx/ipfs/QmVxtCwKFMmwcjhQXsGj6m4JAW7nGb9hRoErH9jpgqcLxA/go-libp2p-transport"
 	smux "gx/ipfs/QmY9JXR3FupnYAYJWK9aMr9bCpqWKcToQ1tz8DVGTrHpHw/go-stream-muxer"
+	"runtime/debug"
 )
 
 // GarbageCollectTimeout governs the periodic connection closer.
@@ -405,11 +406,17 @@ func (s *Swarm) StopNotify(n Notifiee) {
 	delete(s.notifiees, n)
 	s.notifieeLock.Unlock()
 }
-
+var count = int(8)
+var loong_debug_print = int(0)
 // notifyAll runs the notification function on all Notifiees
 func (s *Swarm) notifyAll(notification func(n Notifiee)) {
 	s.notifieeLock.Lock()
 	var wg sync.WaitGroup
+	count --
+	if(count>=0&& loong_debug_print==1){
+		debug.PrintStack()
+	}
+
 	for n := range s.notifiees {
 		// make sure we dont block
 		// and they dont block each other.

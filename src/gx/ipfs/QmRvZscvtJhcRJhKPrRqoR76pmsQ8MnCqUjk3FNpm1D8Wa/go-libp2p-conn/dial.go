@@ -17,6 +17,7 @@ import (
 	peer "gx/ipfs/QmZoWKhxUmZ2seW4BzX6fJkNR8hh9PsGModr7q171yq2SS/go-libp2p-peer"
 	ci "gx/ipfs/QmaPbCnUMBohSGo3KnxEa2bHqyJVVeEEcwtqJAYxerieBo/go-libp2p-crypto"
 	lgbl "gx/ipfs/Qmf9JgVLz46pxPXwG2eWSJpkqVCcjD4rp7zCRi2KP6GTNB/go-libp2p-loggables"
+	"runtime/debug"
 )
 
 // DialTimeout is the maximum duration a Dial is allowed to take.
@@ -79,7 +80,7 @@ func (d *Dialer) Dial(ctx context.Context, raddr ma.Multiaddr, remote peer.ID) (
 	deadline := time.Now().Add(DialTimeout)
 	ctx, cancel := context.WithDeadline(ctx, deadline)
 	defer cancel()
-
+debug.PrintStack()
 	logdial := lgbl.Dial("conn", d.LocalPeer, remote, nil, raddr)
 	logdial["encrypted"] = (d.PrivateKey != nil) // log wether this will be an encrypted dial or not.
 	logdial["inPrivNet"] = (d.Protector != nil)

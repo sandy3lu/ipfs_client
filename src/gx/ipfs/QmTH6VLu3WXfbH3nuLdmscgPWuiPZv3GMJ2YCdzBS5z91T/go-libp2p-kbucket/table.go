@@ -10,6 +10,7 @@ import (
 	logging "gx/ipfs/QmRb5jh8z2E8hMGN2tkvs1yHynUanqnZ3UeKwgN1i9P1F8/go-log"
 	pstore "gx/ipfs/QmXauCuJzmzapetmC6W4TuDJLL1yFFrVzSHoWv8YdbmnxH/go-libp2p-peerstore"
 	peer "gx/ipfs/QmZoWKhxUmZ2seW4BzX6fJkNR8hh9PsGModr7q171yq2SS/go-libp2p-peer"
+	"runtime/debug"
 )
 
 var log = logging.Logger("table")
@@ -52,14 +53,21 @@ func NewRoutingTable(bucketsize int, localID ID, latency time.Duration, m pstore
 
 	return rt
 }
-
+var countUpdate = int(8)
+var countRemove = int(8)
+var loong_debug_print = int(0)
 // Update adds or moves the given peer to the front of its respective bucket
 // If a peer gets removed from a bucket, it is returned
 func (rt *RoutingTable) Update(p peer.ID) {
+
 	peerID := ConvertPeerID(p)
 	cpl := commonPrefixLen(peerID, rt.local)
 
 	rt.tabLock.Lock()
+	countUpdate --
+	if(countUpdate>=0 && loong_debug_print==1){
+		debug.PrintStack()
+	}
 	defer rt.tabLock.Unlock()
 	bucketID := cpl
 	if bucketID >= len(rt.Buckets) {
@@ -102,7 +110,12 @@ func (rt *RoutingTable) Update(p peer.ID) {
 // Remove deletes a peer from the routing table. This is to be used
 // when we are sure a node has disconnected completely.
 func (rt *RoutingTable) Remove(p peer.ID) {
+
 	rt.tabLock.Lock()
+	countRemove --
+	if(countRemove>=0 && loong_debug_print==1){
+		debug.PrintStack()
+	}
 	defer rt.tabLock.Unlock()
 	peerID := ConvertPeerID(p)
 	cpl := commonPrefixLen(peerID, rt.local)

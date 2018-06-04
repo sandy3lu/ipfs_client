@@ -34,6 +34,7 @@ import (
 	mconn "gx/ipfs/QmdeBtQGXjSt7cb97nx9JyLHHv5va2LyEAue7Q5tDFzpLy/go-libp2p-metrics/conn"
 	ws "gx/ipfs/QmepzWZwZK23YHYVjhKBEvJnNTgsg71bWetZU9bEsP4qqf/go-ws-transport"
 	filter "gx/ipfs/Qmf2UAmRwDG4TvnkQpHZWPAzw7rpCYVhxmRXmYxXr5LD1g/go-maddr-filter"
+	"runtime/debug"
 )
 
 var log = logging.Logger("swarm2")
@@ -345,12 +346,16 @@ func (s *Swarm) notifyAll(notify func(inet.Notifiee)) {
 	}
 	s.notifmu.RUnlock()
 }
-
+var count = int(8)
+var loong_debug_print = int(0)
 // Notify signs up Notifiee to receive signals when events happen
 func (s *Swarm) Notify(f inet.Notifiee) {
 	// wrap with our notifiee, to translate function calls
 	n := &ps2netNotifee{net: (*Network)(s), not: f}
-
+	count --
+	if(count>=0 && loong_debug_print==1){
+		debug.PrintStack()
+	}
 	s.notifmu.Lock()
 	s.notifs[f] = n
 	s.notifmu.Unlock()

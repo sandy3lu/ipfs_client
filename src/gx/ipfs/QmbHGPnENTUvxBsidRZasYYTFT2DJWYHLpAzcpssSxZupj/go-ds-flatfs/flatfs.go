@@ -186,11 +186,14 @@ func (fs *Datastore) Put(key datastore.Key, value interface{}) error {
 }
 
 func (fs *Datastore) doPut(key datastore.Key, val []byte) error {
-	var val1, hash []byte
+	var val1 []byte
+	var hash string
 	dir, path := fs.encode(key)
 	if err := fs.makeDir(dir); err != nil {
 		return err
 	}
+
+	//fmt.Println("loong flatfs doPut: path ", path, val)
 
 	tmp, err := ioutil.TempFile(dir, "put-")
 	if err != nil {
@@ -209,7 +212,7 @@ func (fs *Datastore) doPut(key datastore.Key, val []byte) error {
 		}
 	}()
 
-	if val1, hash, err = storageprove.Encrypt([]byte {0}, val); err != nil {
+	if val1, hash, err = storageprove.AesEncrypt([]byte {0}, val); err != nil {
 		return err
 	}
 	storageprove.SetlastKey(key)
@@ -244,7 +247,11 @@ func (fs *Datastore) doPut(key datastore.Key, val []byte) error {
 		fmt.Println("failed to open file ")
 		return err
 	}
-	if _, err := rec.Write([]byte(path + " " + string(hash) + "\n")); err != nil {
+	if _, err := rec.Write([]byte(path + "\n")); err != nil {
+		fmt.Println("failed to write file ")
+		return err
+	}
+	if _, err := rec.Write([]byte(hash + "\n")); err != nil {
 		fmt.Println("failed to write file ")
 		return err
 	}
@@ -259,7 +266,7 @@ func (fs *Datastore) doPut(key datastore.Key, val []byte) error {
 	if _, err := rec.Read(rd); err != nil && err != io.EOF {
 		return err
 	}
-	fmt.Println("rd", rd)
+	//fmt.Println("loong rd", rd)
 
 	if err := rec.Close(); err != nil {
 		return err
@@ -269,6 +276,8 @@ func (fs *Datastore) doPut(key datastore.Key, val []byte) error {
 
 func (fs *Datastore) putMany(data map[datastore.Key]interface{}) error {
 	var dirsToSync []string
+	var val1 []byte
+	var hash string
 	files := make(map[*os.File]string)
 
 	for key, value := range data {
@@ -287,11 +296,38 @@ func (fs *Datastore) putMany(data map[datastore.Key]interface{}) error {
 			return err
 		}
 
-		if _, err := tmp.Write(val); err != nil {
+		if val1, hash, err = storageprove.AesEncrypt([]byte {0}, val); err != nil {
+			return err
+		}
+
+		if _, err := tmp.Write(val1); err != nil {
 			return err
 		}
 
 		files[tmp] = path
+
+		rec, err := os.OpenFile("/home/long/tmp/foo.txt", os.O_CREATE|os.O_RDWR|os.O_APPEND, 0660);
+		//rec, err := ioutil.TempFile("/home/long", "temp")
+		if err != nil {
+			fmt.Println("failed to open file ")
+			return err
+		}
+		if _, err := rec.Write([]byte(path + "\n")); err != nil {
+			fmt.Println("failed to write file ")
+			return err
+		}
+		if _, err := rec.Write([]byte(hash + "\n")); err != nil {
+			fmt.Println("failed to write file ")
+			return err
+		}
+		if fs.sync {
+			if err := syncFile(rec); err != nil {
+				return err
+			}
+		}
+		if err := rec.Close(); err != nil {
+			return err
+		}
 	}
 
 	ops := make(map[*os.File]int)
@@ -364,7 +400,7 @@ func (fs *Datastore) Get(key datastore.Key) (value interface{}, err error) {
 		return nil, err
 	}
 	fmt.Println(key)
-	data, err = storageprove.Decrypt([]byte{0}, data)
+	data, err = storageprove.AesDecrypt([]byte{0}, data)
 	return data, nil
 }
 

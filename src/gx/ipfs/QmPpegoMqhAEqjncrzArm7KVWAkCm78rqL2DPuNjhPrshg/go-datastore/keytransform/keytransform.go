@@ -34,6 +34,7 @@ func (d *ktds) Children() []ds.Datastore {
 
 // Put stores the given value, transforming the key first.
 func (d *ktds) Put(key ds.Key, value interface{}) (err error) {
+	//fmt.Println("loong keytransform: put key ", key)
 	return d.child.Put(d.ConvertKey(key), value)
 }
 

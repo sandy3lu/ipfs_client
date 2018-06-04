@@ -54,6 +54,7 @@ type Conn struct {
 }
 
 func newConn(nconn tpt.Conn, tconn smux.Conn, s *Swarm) *Conn {
+	fmt.Println("loong newConn: ", nconn.LocalAddr(), nconn.RemoteAddr())
 	return &Conn{
 		netConn:  nconn,
 		smuxConn: tconn,

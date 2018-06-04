@@ -12,6 +12,8 @@ import (
 	ma "gx/ipfs/QmWWQ2Txc2c6tqjsBpzg5Ar652cHPGNsQQp2SejkNmkUMb/go-multiaddr"
 	peer "gx/ipfs/QmZoWKhxUmZ2seW4BzX6fJkNR8hh9PsGModr7q171yq2SS/go-libp2p-peer"
 	lgbl "gx/ipfs/Qmf9JgVLz46pxPXwG2eWSJpkqVCcjD4rp7zCRi2KP6GTNB/go-libp2p-loggables"
+	"runtime/debug"
+	//"gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht"
 )
 
 // Diagram of dial sync:
@@ -140,6 +142,32 @@ func (db *dialbackoff) Clear(p peer.ID) {
 	delete(db.entries, p)
 }
 
+func IDS(ids string) peer.ID {
+	id, err := peer.IDB58Decode(ids)
+	if err != nil {
+		fmt.Printf("id %q is bad: %s\n", ids, err)
+	}
+	return id
+}
+
+func peerIsSN(id peer.ID) bool{
+	SNmap := make(map[peer.ID]bool)
+	id1 := IDS("QmZC2X4121r29aFdu9qcxFRUn9vf2QWfmQu9q93vehP26q")
+	id2 := IDS("QmaobJVq6LefdNeuhrkedNUACwny6rx785UjUG2hRNmLzX")
+	id3 := IDS("QmPkMKiAWCpJ5A57rbfCYUA7mmw35EpSmLHCrZgbxVKPrn")
+	id4 := IDS("QmRo6ZnfPzsfgF7q51uL7cq2h8FqEt3kcaFsuKE2y3T2oe")
+	id5 := IDS("QmWWG7uiYyAGrzKCp8ngnGiR57TCTNH4ZydxfSsgnRHkUd")
+	SNmap[id1] = true
+	SNmap[id2] = true
+	SNmap[id3] = true
+	SNmap[id4] = true
+	SNmap[id5] = true
+	if SNmap[id]  {
+		return true
+	}
+	return false
+}
+
 // Dial connects to a peer.
 //
 // The idea is that the client of Swarm does not need to know what network
@@ -152,7 +180,10 @@ func (s *Swarm) Dial(ctx context.Context, p peer.ID) (*Conn, error) {
 		log.Event(ctx, "swarmDialSelf", logdial)
 		return nil, ErrDialToSelf
 	}
-
+	if !peerIsSN(p) {
+		debug.PrintStack()
+		fmt.Println("peerID: ", p.Pretty())
+	}
 	return s.gatedDialAttempt(ctx, p)
 }
 

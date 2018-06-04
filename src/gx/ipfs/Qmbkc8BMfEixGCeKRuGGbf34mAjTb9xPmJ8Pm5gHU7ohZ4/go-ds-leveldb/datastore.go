@@ -52,6 +52,7 @@ func (d *datastore) Put(key ds.Key, value interface{}) (err error) {
 	if !ok {
 		return ds.ErrInvalidType
 	}
+	//fmt.Println("loong leveldb put: ", key, val)
 	return d.DB.Put(key.Bytes(), val, nil)
 }
 

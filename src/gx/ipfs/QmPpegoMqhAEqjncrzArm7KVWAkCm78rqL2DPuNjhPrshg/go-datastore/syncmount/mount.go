@@ -47,11 +47,11 @@ func (d *Datastore) lookup(key ds.Key) (ds.Datastore, ds.Key, ds.Key) {
 		if m.Prefix.Equal(key) || m.Prefix.IsAncestorOf(key) {
 			s := strings.TrimPrefix(key.String(), m.Prefix.String())
 			k := ds.NewKey(s)
-			fmt.Println("lookup: key=", key.String()," s=", s, " k=", k, " mPrefix=", m.Prefix.String() )
+			//fmt.Println("loong lookup: key=", key.String()," s=", s, " k=", k, " mPrefix=", m.Prefix.String() )
 			return m.Datastore, m.Prefix, k
 		}
 	}
-	fmt.Println("not found, key=",  key.String() )
+	//fmt.Println("loong not found, key=",  key.String() )
 	return nil, ds.NewKey("/"), key
 }
 

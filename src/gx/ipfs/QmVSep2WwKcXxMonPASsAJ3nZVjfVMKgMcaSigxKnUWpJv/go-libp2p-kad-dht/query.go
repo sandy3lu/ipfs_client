@@ -102,7 +102,7 @@ func newQueryRunner(q *dhtQuery) *dhtQueryRunner {
 func (r *dhtQueryRunner) Run(ctx context.Context, peers []peer.ID) (*dhtQueryResult, error) {
 	r.log = log
 	r.runCtx = ctx
-
+	//debug.PrintStack()//loong
 	if len(peers) == 0 {
 		log.Warning("Running query with no peers!")
 		return nil, nil

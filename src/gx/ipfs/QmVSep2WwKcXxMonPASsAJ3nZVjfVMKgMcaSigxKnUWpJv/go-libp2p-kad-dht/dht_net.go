@@ -42,7 +42,7 @@ func (dht *IpfsDHT) handleNewMessage(s inet.Stream) {
 
 		// update the peer (on valid msgs only)
 		dht.updateFromMessage(ctx, mPeer, pmes)
-
+fmt.Println("mestype: ", pmes.GetType(), mPeer.Pretty())
 		// get handler for this msg type.
 		handler := dht.handlerForMsgType(pmes.GetType())
 		if handler == nil {
@@ -282,6 +282,7 @@ func (ms *messageSender) SendRequest(ctx context.Context, pmes *pb.Message) (*pb
 		}
 
 		log.Event(ctx, "dhtSentMessage", ms.dht.self, ms.p, pmes)
+		fmt.Println(ctx, "loong dhtSentMessage", ms.dht.self, ms.p, pmes)
 
 		if ms.singleMes > streamReuseTries {
 			ms.s.Close()

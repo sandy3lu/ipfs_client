@@ -105,14 +105,15 @@ func (dht *IpfsDHT) BootstrapOnSignal(cfg BootstrapConfig, signal <-chan time.Ti
 
 func (dht *IpfsDHT) bootstrapWorker(cfg BootstrapConfig) func(worker goprocess.Process) {
 	return func(worker goprocess.Process) {
+		//*   bylong
 		// it would be useful to be able to send out signals of when we bootstrap, too...
 		// maybe this is a good case for whole module event pub/sub?
-
 		ctx := dht.Context()
 		if err := dht.runBootstrap(ctx, cfg); err != nil {
 			log.Warning(err)
 			// A bootstrapping error is important to notice but not fatal.
 		}
+		//*/
 	}
 }
 
@@ -124,6 +125,11 @@ func (dht *IpfsDHT) runBootstrap(ctx context.Context, cfg BootstrapConfig) error
 	bslog("start")
 	defer bslog("end")
 	defer log.EventBegin(ctx, "dhtRunBootstrap").Done()
+
+	skip := false	//loong
+	if skip {
+		return nil
+	}
 
 	var merr u.MultiErr
 
@@ -160,7 +166,7 @@ func (dht *IpfsDHT) runBootstrap(ctx context.Context, cfg BootstrapConfig) error
 		// note that the core/bootstrap context deadline should be extended too for that.
 		for i := 0; i < cfg.Queries; i++ {
 			id := randomID()
-			log.Debugf("Bootstrapping query (%d/%d) to random ID: %s", i+1, cfg.Queries, id)
+			fmt.Printf("loong Bootstrapping query (%d/%d) to random ID: %s\n", i+1, cfg.Queries, id)
 			runQuery(ctx, id)
 		}
 
@@ -176,7 +182,7 @@ func (dht *IpfsDHT) runBootstrap(ctx context.Context, cfg BootstrapConfig) error
 				defer wg.Done()
 
 				id := randomID()
-				log.Debugf("Bootstrapping query (%d/%d) to random ID: %s", i+1, cfg.Queries, id)
+				fmt.Printf("loong Bootstrapping query (%d/%d) to random ID: %s\n", i+1, cfg.Queries, id)
 				runQuery(ctx, id)
 			}()
 		}
