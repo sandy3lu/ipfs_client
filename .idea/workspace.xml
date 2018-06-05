@@ -2,76 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="deabadbc-46fe-4562-a44c-c327e364003b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/assets.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/assets.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/blockservice.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/blockservice.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/commands.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/commands.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/commands/legacy.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/commands/legacy.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands/dag.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands/dag.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands/object.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands/object.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands/unixfs.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/commands/unixfs.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/coreapi.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/coreapi.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/corehttp.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/corehttp.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/corerepo.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/corerepo.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/coreunix.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/core/coreunix.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/exchange/bitswap.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/exchange/bitswap.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/exchange/bitswap/testnet.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/exchange/bitswap/testnet.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/exchange/reprovide.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/exchange/reprovide.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/fuse/ipns.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/fuse/ipns.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/fuse/node.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/fuse/node.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/fuse/readonly.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/fuse/readonly.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/mfs.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/mfs.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/namesys.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/namesys.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/namesys/republisher.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/namesys/republisher.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/pin.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/pin.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo/config.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo/config.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo/fsrepo.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo/fsrepo.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo/fsrepo/serialize.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/repo/fsrepo/serialize.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/storageprove.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/storageprove.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/unixfs/io.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/github.com/ipfs/go-ipfs/unixfs/io.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/discovery.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/discovery.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/net/mock.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/net/mock.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/protocol/identify.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/protocol/identify.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/keytransform.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/keytransform.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/syncmount.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/syncmount.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmQViVWBHbU6HmYjXcdNq7tVASCNgdg64ZGcauuDkLCivW/go-ipfs-addr.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmQViVWBHbU6HmYjXcdNq7tVASCNgdg64ZGcauuDkLCivW/go-ipfs-addr.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmYVR3C8DWPHdHxvLtNFYfjsXgaRAdh6hPMNH3KiwCgu4o/go-libp2p-netutil.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmYVR3C8DWPHdHxvLtNFYfjsXgaRAdh6hPMNH3KiwCgu4o/go-libp2p-netutil.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs.a" />
-      <change beforePath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/Qmbkc8BMfEixGCeKRuGGbf34mAjTb9xPmJ8Pm5gHU7ohZ4/go-ds-leveldb.a" afterPath="$PROJECT_DIR$/pkg/linux_amd64/gx/ipfs/Qmbkc8BMfEixGCeKRuGGbf34mAjTb9xPmJ8Pm5gHU7ohZ4/go-ds-leveldb.a" />
-      <change beforePath="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs" afterPath="$PROJECT_DIR$/src/github.com/ipfs/go-ipfs" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/discovery/mdns.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/discovery/mdns.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic/basic_host.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic/basic_host.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/protocol/identify/id.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/protocol/identify/id.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/keytransform/keytransform.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/keytransform/keytransform.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/syncmount/mount.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore/syncmount/mount.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn/dial.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn/dial.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm_dial.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm_dial.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket/table.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket/table.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream/client.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream/client.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_bootstrap.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_bootstrap.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_net.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_net.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/lookup.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/lookup.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/notif.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/notif.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/query.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/query.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/routing.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/routing.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit/relay.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmVTnHzuyECV9JzbXXfZRj1pKtgknp1esamUb2EH33mJkA/go-libp2p-circuit/relay.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/conn.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/conn.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/swarm.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmWp2mA7eab53PS4NdyW4uvBf73ZB7wSB7eN64K5pS1AKg/go-peerstream/swarm.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs/flatfs.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmbHGPnENTUvxBsidRZasYYTFT2DJWYHLpAzcpssSxZupj/go-ds-flatfs/flatfs.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/Qmbkc8BMfEixGCeKRuGGbf34mAjTb9xPmJ8Pm5gHU7ohZ4/go-ds-leveldb/datastore.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/Qmbkc8BMfEixGCeKRuGGbf34mAjTb9xPmJ8Pm5gHU7ohZ4/go-ds-leveldb/datastore.go" />
-      <change beforePath="$PROJECT_DIR$/src/gx/ipfs/QmcZfnkapfECQGcLZaf9B79NRg7cRa9EnZh4LSbkCzwNvY/go-cid/cid.go" afterPath="$PROJECT_DIR$/src/gx/ipfs/QmcZfnkapfECQGcLZaf9B79NRg7cRa9EnZh4LSbkCzwNvY/go-cid/cid.go" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,7 +16,7 @@
       <file leaf-file-name="dial.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn/dial.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
+            <state relative-caret-position="1365">
               <caret line="91" column="63" lean-forward="false" selection-start-line="91" selection-start-column="63" selection-end-line="91" selection-end-column="63" />
               <folding>
                 <element signature="e#14#911#0" expanded="true" />
@@ -97,7 +28,7 @@
       <file leaf-file-name="notif.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/notif.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
+            <state relative-caret-position="765">
               <caret line="56" column="27" lean-forward="false" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
               <folding>
                 <element signature="e#13#262#0" expanded="true" />
@@ -109,7 +40,7 @@
       <file leaf-file-name="table.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket/table.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
+            <state relative-caret-position="1710">
               <caret line="124" column="38" lean-forward="false" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
               <folding />
             </state>
@@ -119,7 +50,7 @@
       <file leaf-file-name="query.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/query.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="1410">
               <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding>
                 <element signature="e#13#949#0" expanded="true" />
@@ -131,18 +62,28 @@
       <file leaf-file-name="dht.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
+            <state relative-caret-position="3675">
               <caret line="273" column="22" lean-forward="false" selection-start-line="273" selection-start-column="17" selection-end-line="273" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dht_bootstrap.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dht_bootstrap.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_bootstrap.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+            <state relative-caret-position="228">
+              <caret line="111" column="58" lean-forward="true" selection-start-line="111" selection-start-column="58" selection-end-line="111" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/core.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1130">
+              <caret line="154" column="19" lean-forward="false" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -161,21 +102,9 @@
       <file leaf-file-name="blockservice.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/blockservice/blockservice.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="2805">
               <caret line="200" column="26" lean-forward="false" selection-start-line="200" selection-start-column="26" selection-end-line="200" selection-end-column="26" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="basic_host.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic/basic_host.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding>
-                <element signature="e#19#1228#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -183,7 +112,7 @@
       <file leaf-file-name="swarm_dial.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm_dial.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
+            <state relative-caret-position="2055">
               <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
               <folding />
             </state>
@@ -201,7 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>testconnection</find>
       <find>sent listen addrs to</find>
       <find>RequestHandler</find>
       <find>testConnection remotpees</find>
@@ -231,6 +159,7 @@
       <find>IpfsDHT) bootstrapWorker</find>
       <find>loong</find>
       <find>Bootstrap</find>
+      <find>startOnlineServices</find>
     </findStrings>
     <replaceStrings>
       <replace>fmt.printLn</replace>
@@ -393,7 +322,7 @@
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="976" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="984" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22945395" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -401,9 +330,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29090908" sideWeight="0.5019326" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45399517" sideWeight="0.49806738" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45399517" sideWeight="0.49806738" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292978" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27413127" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27688915" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37046006" sideWeight="0.4980695" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -813,7 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="138" column="42" lean-forward="false" selection-start-line="138" selection-start-column="42" selection-end-line="138" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,7 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,19 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/core.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="269" column="33" lean-forward="false" selection-start-line="269" selection-start-column="33" selection-end-line="269" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmToCvh5eJtoDheMggre7b2zeFCJ6tAyB82YVs457cqoUE/go-libp2p-interface-conn/interface.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +809,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="78" column="33" lean-forward="true" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="56" column="20" lean-forward="false" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -967,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1545">
           <caret line="105" column="4" lean-forward="false" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,7 +895,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="94" column="5" lean-forward="false" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,7 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,7 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-760">
           <caret line="155" column="29" lean-forward="false" selection-start-line="155" selection-start-column="29" selection-end-line="155" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,7 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1073,7 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="265" column="16" lean-forward="false" selection-start-line="265" selection-start-column="16" selection-end-line="265" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,7 +985,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="36" column="48" lean-forward="false" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,7 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="142" column="32" lean-forward="false" selection-start-line="142" selection-start-column="32" selection-end-line="142" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,7 +999,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1105,7 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,23 +1013,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmNh1kGFFdsPu79KNSaL4NUKUPb4Eiz4KHdMtFY6664RDp/go-libp2p/p2p/host/basic/basic_host.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="30">
           <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
           <folding>
-            <element signature="e#19#1228#0" expanded="true" />
+            <element signature="e#19#1228#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmSwZMWwFZSUpe5muU2xgTUwppH24KfMwdPXiwbEp2c6G5/go-libp2p-swarm/swarm_dial.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
+        <state relative-caret-position="2055">
           <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
           <folding />
         </state>
@@ -1145,7 +1044,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/blockservice/blockservice.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="2805">
           <caret line="200" column="26" lean-forward="false" selection-start-line="200" selection-start-column="26" selection-end-line="200" selection-end-column="26" />
           <folding />
         </state>
@@ -1153,7 +1052,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/query.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="1410">
           <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding>
             <element signature="e#13#949#0" expanded="true" />
@@ -1163,7 +1062,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="3675">
           <caret line="273" column="22" lean-forward="false" selection-start-line="273" selection-start-column="17" selection-end-line="273" selection-end-column="22" />
           <folding />
         </state>
@@ -1171,7 +1070,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmRvZscvtJhcRJhKPrRqoR76pmsQ8MnCqUjk3FNpm1D8Wa/go-libp2p-conn/dial.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
+        <state relative-caret-position="1365">
           <caret line="91" column="63" lean-forward="false" selection-start-line="91" selection-start-column="63" selection-end-line="91" selection-end-column="63" />
           <folding>
             <element signature="e#14#911#0" expanded="true" />
@@ -1181,7 +1080,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/notif.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
+        <state relative-caret-position="765">
           <caret line="56" column="27" lean-forward="false" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
           <folding>
             <element signature="e#13#262#0" expanded="true" />
@@ -1191,7 +1090,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmTH6VLu3WXfbH3nuLdmscgPWuiPZv3GMJ2YCdzBS5z91T/go-libp2p-kbucket/table.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
+        <state relative-caret-position="1710">
           <caret line="124" column="38" lean-forward="false" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
           <folding />
         </state>
@@ -1199,8 +1098,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gx/ipfs/QmVSep2WwKcXxMonPASsAJ3nZVjfVMKgMcaSigxKnUWpJv/go-libp2p-kad-dht/dht_bootstrap.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+        <state relative-caret-position="228">
+          <caret line="111" column="58" lean-forward="true" selection-start-line="111" selection-start-column="58" selection-end-line="111" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github.com/ipfs/go-ipfs/core/core.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1130">
+          <caret line="154" column="19" lean-forward="false" selection-start-line="154" selection-start-column="19" selection-end-line="154" selection-end-column="19" />
           <folding />
         </state>
       </provider>
