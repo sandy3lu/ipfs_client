@@ -76,11 +76,11 @@ func SetDataStore(d repo.Datastore) {
 func check(){
 	aesLock.Lock()
 	defer aesLock.Unlock()
-	const content = "/home/long/tmp/foo.txt"
+	const content = "/home/sandy/tmp/foo.txt"
 	var line string
 	var err error
 	var lenRead int
-	line2 := "/home/long/tmp/ipfstest3/blocks/B5/CIQDOZU3EAGXWK3PLVFOFOZOAE5USX3XM6I5CSHSQGTML2BAGN7MB5I.data"
+	line2 := "/home/sandy/tmp/ipfstest3/blocks/B5/CIQDOZU3EAGXWK3PLVFOFOZOAE5USX3XM6I5CSHSQGTML2BAGN7MB5I.data"
 	rand.Seed(time.Now().Unix())
 	lineNum := rand.Intn(1000)
 	lineNum = lineNum - lineNum%2 +1

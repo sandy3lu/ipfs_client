@@ -5,6 +5,8 @@ import (
 	"errors"
 	"fmt"
 	"time"
+	//"sync"
+	"github.com/ipfs/go-ipfs/pin"
 
 	u "gx/ipfs/QmNiJuT8Ja3hMVpBHXv3Q6dwmperaQ6JjLtpMQgMCD7xvx/go-ipfs-util"
 	ds "gx/ipfs/QmPpegoMqhAEqjncrzArm7KVWAkCm78rqL2DPuNjhPrshg/go-datastore"
@@ -38,6 +40,11 @@ func (dht *IpfsDHT) handlerForMsgType(t pb.Message_MessageType) dhtHandler {
 		return dht.handleGetProviders
 	case pb.Message_PING:
 		return dht.handlePing
+
+	case pb.Message_ADD_FILE:// TODO: sandy modified
+		return dht.handleAddFile
+	case pb.Message_REMOVE_FILE:
+		return dht.handleRemoveFile
 	default:
 		return nil
 	}
@@ -326,6 +333,168 @@ func (dht *IpfsDHT) handleAddProvider(ctx context.Context, p peer.ID, pmes *pb.M
 		}
 		dht.providers.AddProvider(ctx, c, p)
 	}
+
+	return nil, nil
+}
+
+
+func (dht *IpfsDHT) handleAddFile(ctx context.Context, p peer.ID, pmes *pb.Message) (*pb.Message, error) {//TODO: sandy modified
+	lm := make(lgbl.DeferredMap)
+	lm["peer"] = func() interface{} { return p.Pretty() }
+	eip := log.EventBegin(ctx, "handleAddFile", lm)
+	defer eip.Done()
+
+	c, err := cid.Cast([]byte(pmes.GetKey()))
+	if err != nil {
+		eip.SetError(err)
+		return nil, err
+	}
+
+	lm["key"] = func() interface{} { return c.String() }
+
+
+
+	// add provider should use the address given in the message
+	pinfos := pb.PBPeersToPeerInfos(pmes.GetProviderPeers())
+	for _, pi := range pinfos {
+		if pi.ID != p {
+			// we should ignore this provider reccord! not from originator.
+			// (we chould sign them and check signature later...)
+			log.Debugf("handleAddProvider received provider %s from %s. Ignore.", pi.ID, p)
+			continue
+		}
+
+		if len(pi.Addrs) < 1 {
+			log.Debugf("%s got no valid addresses for provider %s. Ignore.", dht.self, p)
+			continue
+		}
+
+		log.Infof("received provider %s for %s (addrs: %s)", p, c, pi.Addrs)
+		if pi.ID != dht.self { // dont add own addrs.
+			// add the received addresses to our peerstore.
+			dht.peerstore.AddAddrs(pi.ID, pi.Addrs, pstore.ProviderAddrTTL)
+		}
+		dht.providers.AddProvider(ctx, c, p)
+		fmt.Printf("[!!!!]%s adding %s as a provider for '%s'\n", dht.self, p, c)
+	}
+
+	var curentLevel int =  int(pmes.GetClusterLevelRaw())
+	if curentLevel < 10 {
+		fmt.Printf("[!!!!]should not send to leaf node %s when level = %d\n", dht.self , curentLevel)
+
+	}else if (curentLevel <20) && (curentLevel> 10) {
+
+		fmt.Printf("[!!!!]should not send to leaf node %s when level = %d\n", dht.self ,  curentLevel)
+	}else {
+		// leaf node , start get key cmd , call pin add file
+		fmt.Printf("[!!!!]leaf node %s AddFile-level final (%s, %s), calling pin.SetTask \n", dht.self , c, p)
+		pin.SetTask(pmes.GetKey())
+		resultstr := pin.GetTaskResult()
+		var str string
+		str =<- resultstr
+		fmt.Println(str)
+		if str == "OK" {
+			pmes.SetClusterLevel(88)
+			return pmes, nil
+		}else {
+			pmes.SetClusterLevel(99)
+			return pmes, nil
+		}
+	}
+
+
+	return nil, nil
+}
+// TODO: sandy modified
+func (dht *IpfsDHT) SendToClosestLeaf(ctx context.Context,  pmes *pb.Message) (*pb.Message, error){
+
+	peers, err := dht.GetClosestPeers(ctx, pmes.GetKey())  // leaf nodes
+	if err != nil {
+
+		return nil, err
+	}
+
+	var count = pmes.GetClusterLevelRaw()-10
+	pmes.SetClusterLevel(50);
+
+	c, err := cid.Cast([]byte(pmes.GetKey()))
+	if err != nil {
+
+		return nil, err
+	}
+
+
+	pinfos := pb.PBPeersToPeerInfos(pmes.GetProviderPeers())
+	oristr := pinfos[0].ID
+	fmt.Printf("[!!!!]AddFile-level provider = %s \n", oristr)
+	for p := range peers {
+
+
+			if(p == oristr){
+				continue
+			}
+
+			fmt.Printf("[!!!!]AddFile-level up 50 , send add task to leaf peers(%s, %s)\n", c, p)
+			resp, err := dht.sendRequest(ctx, p, pmes)
+			//err := dht.sendMessage(ctx, p, pmes)
+			if err!= nil {
+				fmt.Printf("[!!!!]task to leaf peers(%s, %s) error %s \n", c, p, err)
+				continue
+			}
+			if resp != nil {
+				if resp.GetClusterLevelRaw() == 88 {
+					count --
+					fmt.Printf("[!!!!]task to leaf peers(%s, %s) success,  %d left \n", c, p, count)
+
+					if count == 0 {
+						return nil, nil
+					}
+				}
+
+			}
+
+	}
+
+	return pmes, nil
+}
+
+
+func (dht *IpfsDHT) GetClosestSuperPeers(ctx context.Context, key string) (<-chan peer.ID, error) {
+	out := make(chan peer.ID, KValue)
+	defer close(out)
+	out <- dht.self
+	return out, nil
+}
+
+func (dht *IpfsDHT) handleRemoveFile(ctx context.Context, p peer.ID, pmes *pb.Message) (*pb.Message, error) {//TODO: sandy modified
+	lm := make(lgbl.DeferredMap)
+	lm["peer"] = func() interface{} { return p.Pretty() }
+	eip := log.EventBegin(ctx, "handleRemoveFile", lm)
+	defer eip.Done()
+
+	c, err := cid.Cast([]byte(pmes.GetKey()))
+	if err != nil {
+		eip.SetError(err)
+		return nil, err
+	}
+
+	lm["key"] = func() interface{} { return c.String() }
+
+	var curentLevel int =  int(pmes.GetClusterLevelRaw())
+	if curentLevel < 10 {
+		fmt.Printf("[!!!!]should not send to leaf node %s when level = %d\n", dht.self , curentLevel)
+
+	}else if (curentLevel <20) && (curentLevel> 10) {
+
+		fmt.Printf("[!!!!]should not send to leaf node %s when level = %d\n", dht.self ,  curentLevel)
+	}else {
+		// leaf node , start get key cmd , call pin add file
+		fmt.Printf("[!!!!]leaf node %s RemoveFile-level final %s, calling pin.SetRemoveTask \n", dht.self , c)
+		pin.SetRemoveTask(pmes.GetKey())
+		
+		
+	}
+
 
 	return nil, nil
 }

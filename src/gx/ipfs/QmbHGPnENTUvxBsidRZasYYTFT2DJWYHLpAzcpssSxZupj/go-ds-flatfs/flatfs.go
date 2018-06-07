@@ -241,7 +241,7 @@ func (fs *Datastore) doPut(key datastore.Key, val []byte) error {
 			return err
 		}
 	}
-	rec, err := os.OpenFile("/home/long/tmp/foo.txt", os.O_CREATE|os.O_RDWR|os.O_APPEND, 0660);
+	rec, err := os.OpenFile("/home/sandy/tmp/foo.txt", os.O_CREATE|os.O_RDWR|os.O_APPEND, 0660);
 	//rec, err := ioutil.TempFile("/home/long", "temp")
 	if err != nil {
 		fmt.Println("failed to open file ")
@@ -306,7 +306,7 @@ func (fs *Datastore) putMany(data map[datastore.Key]interface{}) error {
 
 		files[tmp] = path
 
-		rec, err := os.OpenFile("/home/long/tmp/foo.txt", os.O_CREATE|os.O_RDWR|os.O_APPEND, 0660);
+		rec, err := os.OpenFile("/home/sandy/tmp/foo.txt", os.O_CREATE|os.O_RDWR|os.O_APPEND, 0660);
 		//rec, err := ioutil.TempFile("/home/long", "temp")
 		if err != nil {
 			fmt.Println("failed to open file ")

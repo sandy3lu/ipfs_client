@@ -17,7 +17,7 @@ import (
 	ma "gx/ipfs/QmWWQ2Txc2c6tqjsBpzg5Ar652cHPGNsQQp2SejkNmkUMb/go-multiaddr"
 	pstore "gx/ipfs/QmXauCuJzmzapetmC6W4TuDJLL1yFFrVzSHoWv8YdbmnxH/go-libp2p-peerstore"
 	"gx/ipfs/QmZoWKhxUmZ2seW4BzX6fJkNR8hh9PsGModr7q171yq2SS/go-libp2p-peer"
-	"runtime/debug"
+	//"runtime/debug"
 )
 
 var log = logging.Logger("mdns")
@@ -67,7 +67,7 @@ func NewMdnsService(ctx context.Context, peerhost host.Host, interval time.Durat
 
 	// TODO: dont let mdns use logging...
 	golog.SetOutput(ioutil.Discard)
-debug.PrintStack()
+//debug.PrintStack()
 	var ipaddrs []net.IP
 	port := 4001
 

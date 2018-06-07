@@ -23,6 +23,8 @@ import (
 	uio "github.com/ipfs/go-ipfs/unixfs/io"
 
 	cid "gx/ipfs/QmcZfnkapfECQGcLZaf9B79NRg7cRa9EnZh4LSbkCzwNvY/go-cid"
+	"github.com/ipfs/go-ipfs/pin"
+	b58 "gx/ipfs/QmWFAMPqsEyUX7gDUsRVmMWz59FxSpJ1b2v6bJ1yYzo7jY/go-base58-fast/base58"
 )
 
 func Pin(n *core.IpfsNode, ctx context.Context, paths []string, recursive bool) ([]*cid.Cid, error) {
@@ -89,4 +91,44 @@ func Unpin(n *core.IpfsNode, ctx context.Context, paths []string, recursive bool
 		return nil, err
 	}
 	return unpinned, nil
+}
+
+
+func CheckForTask(ctx context.Context, n *core.IpfsNode){//TODO: sandy modified
+	fmt.Println("[!!!!]receiving Task start......")
+	for {
+		select{
+		case l:=<-pin.GetTask():
+			ll:=b58.Encode([]byte(l))
+			key := []string{ll}
+			_, err:= Pin(n, ctx, key, true)
+			n.Blockstore.PinLock().Unlock()
+			if (err!=nil){
+				fmt.Println("[!!!!]receive AddTask and pinned Err ", err)
+				pin.SetTaskResult("Err")
+			}else {
+				fmt.Println("[!!!!]receive AddTask and pinned Success : ", ll)
+				// broadcast message
+				pin.SetTaskResult("OK" )
+			}
+
+		case l:=<-pin.GetRemoveTask():
+			ll:=b58.Encode([]byte(l))
+			key := []string{ll}
+			_, err:= Unpin(n, ctx, key, true)
+			n.Blockstore.PinLock().Unlock()
+			if (err!=nil){
+				fmt.Println("[!!!!]receive removeTask and unpinned Err ", err)
+
+			}else {
+				fmt.Println("[!!!!]receive removeTask and unpinned Success : ", ll)
+
+			}
+
+		case <-ctx.Done():
+			fmt.Println("[!!!!]receiving Task  end ......")
+			return
+		}
+
+	}
 }

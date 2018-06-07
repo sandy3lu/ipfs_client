@@ -29,7 +29,7 @@ import (
 	ci "gx/ipfs/QmaPbCnUMBohSGo3KnxEa2bHqyJVVeEEcwtqJAYxerieBo/go-libp2p-crypto"
 	cid "gx/ipfs/QmcZfnkapfECQGcLZaf9B79NRg7cRa9EnZh4LSbkCzwNvY/go-cid"
 	base32 "gx/ipfs/QmfVj3x4D6Jkq9SEoi5n2NmoUomLwoeiwnYz2KQa15wRw6/base32"
-	"runtime/debug"
+	//"runtime/debug"
 )
 
 var log = logging.Logger("dht")
@@ -270,7 +270,7 @@ func (dht *IpfsDHT) putLocal(key string, rec *recpb.Record) error {
 // on the given peer.
 func (dht *IpfsDHT) Update(ctx context.Context, p peer.ID) {
 	log.Event(ctx, "updatePeer", p)
-	debug.PrintStack()	//loong
+	//debug.PrintStack()	//loong
 	fmt.Println("loong ipfsdht update: ", p.Pretty())
 	dht.routingTable.Update(p)
 }

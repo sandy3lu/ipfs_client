@@ -193,11 +193,46 @@ type pinner struct {
 	dstore      ds.Datastore
 }
 
+
+var addTask chan string   ////TODO: sandy modified
+var addTaskResult chan string   ////TODO: sandy modified
+var removeTask chan string   ////TODO: sandy modified
+func SetTask(t  string) {
+
+	addTask <- t
+}
+
+func GetTask() chan string{
+	return addTask
+}
+
+func SetTaskResult(t  string) {
+
+	addTaskResult <- t
+}
+
+func GetTaskResult() chan string{
+	return addTaskResult
+}
+
+func SetRemoveTask(t  string) {
+
+	removeTask <- t
+}
+
+func GetRemoveTask() chan string{
+	return removeTask
+}
+
 // NewPinner creates a new pinner using the given datastore as a backend
 func NewPinner(dstore ds.Datastore, serv, internal ipld.DAGService) Pinner {
 
 	rcset := cid.NewSet()
 	dirset := cid.NewSet()
+
+	addTask = make(chan string,1)//TODO: sandy modified
+	addTaskResult = make(chan string,1)//TODO: sandy modified
+	removeTask = make(chan string,1)//TODO: sandy modified
 
 	return &pinner{
 		recursePin:  rcset,
@@ -496,6 +531,10 @@ func LoadPinner(d ds.Datastore, dserv, internal ipld.DAGService) (Pinner, error)
 	p.dstore = d
 	p.internal = internal
 
+
+	addTask = make(chan string,1)//TODO: sandy modified
+	addTaskResult = make(chan string,1)//TODO: sandy modified
+	removeTask = make(chan string,1)//TODO: sandy modified
 	return p, nil
 }
 
