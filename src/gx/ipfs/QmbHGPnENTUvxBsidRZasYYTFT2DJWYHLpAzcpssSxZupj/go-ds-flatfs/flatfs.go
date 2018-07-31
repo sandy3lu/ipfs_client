@@ -18,7 +18,6 @@ import (
 	"gx/ipfs/QmaeRR9SpXumU5tYLRkq6x6pfMe8qKzxn4ujBpsTJ2zQG7/go-os-rename"
 
 	logging "gx/ipfs/QmRb5jh8z2E8hMGN2tkvs1yHynUanqnZ3UeKwgN1i9P1F8/go-log"
-	"io"
 )
 
 var log = logging.Logger("flatfs")
@@ -212,7 +211,7 @@ func (fs *Datastore) doPut(key datastore.Key, val []byte) error {
 		}
 	}()
 
-	if val1, hash, err = storageprove.AesEncrypt([]byte {0}, val); err != nil {
+	if val1, hash, err = storageprove.Ra.AesEncrypt([]byte {0}, val); err != nil {
 		return err
 	}
 	storageprove.SetlastKey(key)
@@ -220,6 +219,8 @@ func (fs *Datastore) doPut(key datastore.Key, val []byte) error {
 	if _, err := tmp.Write(val1); err != nil {
 		return err
 	}
+
+
 	if fs.sync {
 		if err := syncFile(tmp); err != nil {
 			return err
@@ -241,36 +242,12 @@ func (fs *Datastore) doPut(key datastore.Key, val []byte) error {
 			return err
 		}
 	}
-	rec, err := os.OpenFile("/home/sandy/tmp/foo.txt", os.O_CREATE|os.O_RDWR|os.O_APPEND, 0660);
-	//rec, err := ioutil.TempFile("/home/long", "temp")
-	if err != nil {
-		fmt.Println("failed to open file ")
-		return err
-	}
-	if _, err := rec.Write([]byte(path + "\n")); err != nil {
-		fmt.Println("failed to write file ")
-		return err
-	}
-	if _, err := rec.Write([]byte(hash + "\n")); err != nil {
-		fmt.Println("failed to write file ")
-		return err
-	}
-	if fs.sync {
-		if err := syncFile(rec); err != nil {
-			return err
-		}
+
+	if len(hash) != 0 {
+		storageprove.PutRecord(path, hash, fs.sync)
 	}
 
-	rd := make([]byte, 100)
-	rec.Seek(0, 0)
-	if _, err := rec.Read(rd); err != nil && err != io.EOF {
-		return err
-	}
-	//fmt.Println("loong rd", rd)
 
-	if err := rec.Close(); err != nil {
-		return err
-	}
 	return nil
 }
 
@@ -296,7 +273,7 @@ func (fs *Datastore) putMany(data map[datastore.Key]interface{}) error {
 			return err
 		}
 
-		if val1, hash, err = storageprove.AesEncrypt([]byte {0}, val); err != nil {
+		if val1, hash, err = storageprove.Ra.AesEncrypt([]byte {0}, val); err != nil {
 			return err
 		}
 
@@ -306,27 +283,10 @@ func (fs *Datastore) putMany(data map[datastore.Key]interface{}) error {
 
 		files[tmp] = path
 
-		rec, err := os.OpenFile("/home/sandy/tmp/foo.txt", os.O_CREATE|os.O_RDWR|os.O_APPEND, 0660);
-		//rec, err := ioutil.TempFile("/home/long", "temp")
-		if err != nil {
-			fmt.Println("failed to open file ")
-			return err
-		}
-		if _, err := rec.Write([]byte(path + "\n")); err != nil {
-			fmt.Println("failed to write file ")
-			return err
-		}
-		if _, err := rec.Write([]byte(hash + "\n")); err != nil {
-			fmt.Println("failed to write file ")
-			return err
-		}
-		if fs.sync {
-			if err := syncFile(rec); err != nil {
+		if len(hash) != 0 {
+			if err := storageprove.PutRecord(path, hash, fs.sync); err != nil {
 				return err
 			}
-		}
-		if err := rec.Close(); err != nil {
-			return err
 		}
 	}
 
@@ -399,8 +359,8 @@ func (fs *Datastore) Get(key datastore.Key) (value interface{}, err error) {
 		// no specific error to return, so just pass it through
 		return nil, err
 	}
-	fmt.Println(key)
-	data, err = storageprove.AesDecrypt([]byte{0}, data)
+	//fmt.Println("getkey: ", key, fs.path)
+	data, err = storageprove.Ra.AesDecrypt([]byte{0}, data)
 	return data, nil
 }
 

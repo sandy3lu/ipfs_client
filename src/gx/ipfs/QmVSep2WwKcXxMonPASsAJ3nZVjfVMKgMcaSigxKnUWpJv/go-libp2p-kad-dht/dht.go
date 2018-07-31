@@ -271,7 +271,7 @@ func (dht *IpfsDHT) putLocal(key string, rec *recpb.Record) error {
 func (dht *IpfsDHT) Update(ctx context.Context, p peer.ID) {
 	log.Event(ctx, "updatePeer", p)
 	//debug.PrintStack()	//loong
-	fmt.Println("loong ipfsdht update: ", p.Pretty())
+	//fmt.Println("loong ipfsdht update: ", p.Pretty())
 	dht.routingTable.Update(p)
 }
 

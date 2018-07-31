@@ -16,6 +16,8 @@ import (
 	//"bufio"
 )
 
+
+
 func addBase64Padding(value string) string {
 	m := len(value) % 4
 	if m != 0 {
@@ -126,16 +128,40 @@ func PKCS5UnPadding(origData []byte) []byte {
 	return origData[:(length - unpadding)]
 }
 
-func AesEncrypt(key1 []byte, buf []byte) ([]byte, string, error) { //return cyphertext and hash
+type Aes struct {
+	AesCryptI
+}
+
+func (a *Aes) AesEncrypt(key1 []byte, buf []byte) ([]byte, string, error) {
+	return AesEncrypt2(key1, buf)
+}
+
+func (a *Aes) AesDecrypt(key1 []byte, buf []byte) ([]byte, error) {
+	return AesDecrypt2(key1, buf)
+}
+
+func (a *Aes) Hash(buf []byte) ([]byte, error) {
+	return hash2(buf)
+}
+
+func NewAes() *Aes {
+	a := &Aes{
+	}
+	return a
+}
+
+var cyhperHdrLen = int(192)
+
+func AesEncrypt2(key1 []byte, buf []byte) ([]byte, string, error) { //return cyphertext and hash
 	key := GetAesKey()//[]byte("LKHlhb899Y09olUi")
 	block, err := aes.NewCipher(key)
 	if err != nil {
-		return []byte{0}, "", err
+		return []byte{}, "", err
 	}
 	iv := []byte{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 	var blockMode cipher.BlockMode
 
-		blockMode = cipher.NewCBCEncrypter(block,iv)
+	blockMode = cipher.NewCBCEncrypter(block,iv)
 
 
 	//buf := make([]byte,1024)  //AES BlockSize = 16
@@ -155,12 +181,11 @@ func AesEncrypt(key1 []byte, buf []byte) ([]byte, string, error) { //return cyph
 	return buf_out, base32.RawStdEncoding.EncodeToString(hash), nil
 }
 
-
-func AesDecrypt(key1 []byte, buf []byte) ([]byte, error) { //return cyphertext and hash
+func AesDecrypt2(key1 []byte, buf []byte) ([]byte, error) { //return cyphertext and hash
 	key := GetAesKey();//[]byte("LKHlhb899Y09olUi")
 	block, err := aes.NewCipher(key)
 	if err != nil {
-		return []byte{0}, err
+		return []byte{}, err
 	}
 	iv := []byte{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 	var blockMode cipher.BlockMode
@@ -177,51 +202,11 @@ func AesDecrypt(key1 []byte, buf []byte) ([]byte, error) { //return cyphertext a
 	return buf_out, nil
 
 }
-/*
-func AesBlockCipher(keydata []byte, flag int, buf []byte) ([]byte, error){
 
-	// enc file
-
-	block, err := aes.NewCipher(keydata)
-	if err != nil {
-		return []byte{0}, err
+func hash2(data []byte) ([]byte, error) {
+	h := keccak.New256()
+	if _, err := h.Write(data); err != nil{
+		return []byte{}, err
 	}
-	iv := []byte{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-	var blockMode cipher.BlockMode
-	if flag==1{
-		blockMode = cipher.NewCBCEncrypter(block,iv)
-	}else{
-		blockMode = cipher.NewCBCDecrypter(block,iv)
-	}
-
-	//buf := make([]byte,1024)  //AES BlockSize = 16
-	//buf_out := make([]byte,1024)
-	n := len(buf)
-
-		if flag ==1 { //enc
-
-
-			if (n % 16)!=0 {
-				//padding
-				padLength := PKCS5Padding(buf,n,16)
-				buf_out := make([]byte,n + padLength)
-				blockMode.CryptBlocks(buf_out, buf[:(n + padLength)])
-			}else{
-				buf_out := make([]byte,n)
-				blockMode.CryptBlocks(buf_out, buf)
-			}
-		}else{  //dec
-			buf_out := make([]byte,n)
-			blockMode.CryptBlocks(buf_out, buf[:n])
-			ntmp :=n
-			// get the next block
-
-				// end file
-			buf_out = PKCS5UnPadding(buf_out[:ntmp])
-		}
-
-
-	return buf_out, nil
+	return h.Sum(nil), nil
 }
-*/
-

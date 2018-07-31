@@ -71,6 +71,6 @@ func (c *creator) Summary(opts metrics.SummaryOpts) metrics.Summary {
 func (c *creator) register(col pro.Collector) {
 	err := pro.Register(col)
 	if err != nil {
-		log.Errorf("Registering prometheus collector, name: %s, error: %s\n", c.name, err.Error())
+		//log.Errorf("Registering prometheus collector, name: %s, error: %s\n", c.name, err.Error())
 	}
 }

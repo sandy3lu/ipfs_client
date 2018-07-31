@@ -4,7 +4,7 @@ import (
 	mstream "gx/ipfs/QmTnsezaB1wWNRHeHnYrm8K4d5i9wtyj3GsqjC3Rt5b5v5/go-multistream"
 	ma "gx/ipfs/QmWWQ2Txc2c6tqjsBpzg5Ar652cHPGNsQQp2SejkNmkUMb/go-multiaddr"
 	inet "gx/ipfs/QmXfkENeeBvh3zYA51MaSdGUdBjhQ99cP5WQe8zgr6wchG/go-libp2p-net"
-	"fmt"
+	//"fmt"
 )
 
 // netNotifiee defines methods to be used with the IpfsDHT
@@ -47,7 +47,7 @@ func (nn *netNotifiee) Connected(n inet.Network, v inet.Conn) {
 func (nn *netNotifiee) testConnection(v inet.Conn) {
 	dht := nn.DHT()
 	p := v.RemotePeer()
-fmt.Println("testConnection remotpees: ", p.Pretty())
+//fmt.Println("testConnection remotpees: ", p.Pretty())
 if false {	//loong
 	return
 }

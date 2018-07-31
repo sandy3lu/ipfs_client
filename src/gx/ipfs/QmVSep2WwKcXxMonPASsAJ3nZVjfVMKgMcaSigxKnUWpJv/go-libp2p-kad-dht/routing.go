@@ -19,6 +19,8 @@ import (
 	peer "gx/ipfs/QmZoWKhxUmZ2seW4BzX6fJkNR8hh9PsGModr7q171yq2SS/go-libp2p-peer"
 	pset "gx/ipfs/QmZoWKhxUmZ2seW4BzX6fJkNR8hh9PsGModr7q171yq2SS/go-libp2p-peer/peerset"
 	cid "gx/ipfs/QmcZfnkapfECQGcLZaf9B79NRg7cRa9EnZh4LSbkCzwNvY/go-cid"
+
+	"github.com/ipfs/go-ipfs/storageprove"
 )
 
 // asyncQueryBuffer is the size of buffered channels in async queries. This
@@ -321,11 +323,11 @@ func (dht *IpfsDHT) AddTask(ctx context.Context, key *cid.Cid, brdcst bool, copy
 	if !brdcst {
 		return nil
 	}
-
-	peers, err := dht.GetClosestPeers(ctx, key.KeyString())
-	if err != nil {
-		return err
-	}
+	peers:= dht.routingTable.ListPeers()
+	//peers, err := dht.GetClosestPeers(ctx, key.KeyString())
+	//if err != nil {
+	//	return err
+	//}
 
 	pi := pstore.PeerInfo{
 		ID:    dht.self,
@@ -341,19 +343,40 @@ func (dht *IpfsDHT) AddTask(ctx context.Context, key *cid.Cid, brdcst bool, copy
 	mes := pb.NewMessage(pb.Message_ADD_FILE, key.KeyString(), copyNum)
 	mes.ProviderPeers = pb.RawPeerInfosToPBPeers([]pstore.PeerInfo{pi})
 
+	//var sended bool = false
+	nextPeer:
+	for _, p := range peers {
 
-	for p := range peers {
+			for _,nodeName :=range storageprove.SNList {
+				if p.Pretty() == nodeName{
+					// p is SuperNode
+					err := dht.sendMessage(ctx, p, mes)
+					if err != nil {
+						log.Debug(err)
+						continue nextPeer
+					} else {
+						fmt.Printf("[!!!!] %s sent AddTask message %s to SuperNode %s  with level %d \n", dht.self.Pretty(), key, p.Pretty(), mes.GetClusterLevelRaw())
+						//sended = true
+						return nil  // only send to one super node
+					}
+				}
+		      }
 
-			err := dht.sendMessage(ctx, p, mes)
-			if err != nil {
-				log.Debug(err)
-			} else {
-				fmt.Printf("[!!!!] %s sent AddTask message (%s, %s)  with level %d \n", dht.self, key, p, mes.GetClusterLevelRaw())
-				break  // only send to one super node
-			}
 
 	}
 
+	// the message is not send out
+	fmt.Printf("[!!!!] %s sent AddTask message %s find no superNode \n", dht.self.Pretty(), key)
+	for _, p := range peers {
+				err := dht.sendMessage(ctx, p, mes)
+				if err != nil {
+					log.Debug(err)
+				} else {
+					fmt.Printf("[!!!!] %s sent AddTask message %s to peer %s  with level %d \n", dht.self.Pretty(), key, p.Pretty(), mes.GetClusterLevelRaw())
+					//sended = true
+					return nil  // only send to one super node
+				}
+	}
 	return nil
 }
 
@@ -388,22 +411,21 @@ func (dht *IpfsDHT) RemoveTask(ctx context.Context, key *cid.Cid, brdcst bool) (
 	mes := pb.NewMessage(pb.Message_REMOVE_FILE, key.KeyString(), 0)
 	mes.ProviderPeers = pb.RawPeerInfosToPBPeers([]pstore.PeerInfo{pi})
 
-
-
-	wg := sync.WaitGroup{}
 	for p := range peers {
-		wg.Add(1)
-		go func(p peer.ID) {
-			defer wg.Done()
 
-			fmt.Printf("[!!!!] %s sent RemoveTask message %s --> %s  \n", dht.self, key, p)
-			err := dht.sendMessage(ctx, p, mes)
-			if err != nil {
-				log.Debug(err)
-			}
-		}(p)
+		for _,nodeName :=range storageprove.SNList {
+			if p.Pretty() == nodeName{
+				// p is SuperNode
+				fmt.Printf("[!!!!] %s sent RemoveTask message %s --> %s  \n", dht.self.Pretty(), key, p.Pretty())
+				err := dht.sendMessage(ctx, p, mes)
+				if err != nil {
+					log.Debug(err)
+				}
+				}
+		}
+
 	}
-	wg.Wait()
+
 	return nil
 }
 

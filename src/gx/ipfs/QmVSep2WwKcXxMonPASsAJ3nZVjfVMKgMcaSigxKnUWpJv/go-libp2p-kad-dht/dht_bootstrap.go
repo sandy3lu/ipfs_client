@@ -166,7 +166,7 @@ func (dht *IpfsDHT) runBootstrap(ctx context.Context, cfg BootstrapConfig) error
 		// note that the core/bootstrap context deadline should be extended too for that.
 		for i := 0; i < cfg.Queries; i++ {
 			id := randomID()
-			fmt.Printf("loong Bootstrapping query (%d/%d) to random ID: %s\n", i+1, cfg.Queries, id)
+			//fmt.Printf("loong Bootstrapping query (%d/%d) to random ID: %s\n", i+1, cfg.Queries, id)
 			runQuery(ctx, id)
 		}
 
@@ -182,7 +182,7 @@ func (dht *IpfsDHT) runBootstrap(ctx context.Context, cfg BootstrapConfig) error
 				defer wg.Done()
 
 				id := randomID()
-				fmt.Printf("loong Bootstrapping query (%d/%d) to random ID: %s\n", i+1, cfg.Queries, id)
+				//fmt.Printf("loong Bootstrapping query (%d/%d) to random ID: %s\n", i+1, cfg.Queries, id)
 				runQuery(ctx, id)
 			}()
 		}

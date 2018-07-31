@@ -11,8 +11,9 @@ import (
 	logging "gx/ipfs/QmRb5jh8z2E8hMGN2tkvs1yHynUanqnZ3UeKwgN1i9P1F8/go-log"
 	process "gx/ipfs/QmSF8fPo3jgVBAy8fpdjjYqgG87dkJgUprRBHRd2tmfgpP/goprocess"
 	procctx "gx/ipfs/QmSF8fPo3jgVBAy8fpdjjYqgG87dkJgUprRBHRd2tmfgpP/goprocess/context"
-	peer "gx/ipfs/QmZoWKhxUmZ2seW4BzX6fJkNR8hh9PsGModr7q171yq2SS/go-libp2p-peer"
-	cid "gx/ipfs/QmcZfnkapfECQGcLZaf9B79NRg7cRa9EnZh4LSbkCzwNvY/go-cid"
+	"gx/ipfs/QmZoWKhxUmZ2seW4BzX6fJkNR8hh9PsGModr7q171yq2SS/go-libp2p-peer"
+	"gx/ipfs/QmcZfnkapfECQGcLZaf9B79NRg7cRa9EnZh4LSbkCzwNvY/go-cid"
+	//"github.com/ipfs/go-ipfs/core/commands/e"
 )
 
 var TaskWorkerCount = 8
@@ -194,6 +195,7 @@ func (bs *Bitswap) rebroadcastWorker(parent context.Context) {
 			// TODO: come up with a better strategy for determining when to search
 			// for new providers for blocks.
 			i := rand.Intn(len(entries))
+			//fmt.Printf("bitswap: rebrdc len %d, selected %d cid %s\n", len(entries), i, dshelp.CidToDsKey(entries[i].Cid).String())
 			bs.findKeys <- &blockRequest{
 				Cid: entries[i].Cid,
 				Ctx: ctx,
@@ -236,12 +238,16 @@ func (bs *Bitswap) providerQueryManager(ctx context.Context) {
 						defer wg.Done()
 						err := bs.network.ConnectTo(child, p)
 						if err != nil {
-							log.Debug("failed to connect to provider %s: %s", p, err)
+							//fmt.Printf("failed to connect to provider %s: %s\n", p, dshelp.CidToDsKey(e.Cid).String())
+							if true {
+
+							}
 						}
 					}(p)
 				}
 				wg.Wait()
 				activeLk.Lock()
+				//fmt.Println("bitswap: removing ", dshelp.CidToDsKey(e.Cid).String())
 				kset.Remove(e.Cid)
 				activeLk.Unlock()
 			}(e)

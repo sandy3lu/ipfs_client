@@ -12,6 +12,7 @@ import (
 	ggio "gx/ipfs/QmZ4Qi3GaRbjcx28Sme5eMH7RQjGkt8wHxt2a65oLaeFEV/gogo-protobuf/io"
 	proto "gx/ipfs/QmZ4Qi3GaRbjcx28Sme5eMH7RQjGkt8wHxt2a65oLaeFEV/gogo-protobuf/proto"
 	cid "gx/ipfs/QmcZfnkapfECQGcLZaf9B79NRg7cRa9EnZh4LSbkCzwNvY/go-cid"
+	//"gx/ipfs/QmdQTPWduSeyveSxeCAte33M592isSW5Z979g81aJphrgn/go-ipfs-ds-help"
 )
 
 // TODO move message.go into the bitswap package
@@ -155,8 +156,10 @@ func (m *impl) addEntry(c *cid.Cid, priority int, cancel bool) {
 			Entry: &wantlist.Entry{
 				Cid:      c,
 				Priority: priority,
+				Delegate: true,
 			},
 			Cancel: cancel,
+
 		}
 	}
 }
@@ -188,6 +191,7 @@ func (m *impl) ToProtoV0() *pb.Message {
 			Block:    proto.String(e.Cid.KeyString()),
 			Priority: proto.Int32(int32(e.Priority)),
 			Cancel:   proto.Bool(e.Cancel),
+			Delegate: proto.Bool(e.Delegate),
 		})
 	}
 	pbm.Wantlist.Full = proto.Bool(m.full)
@@ -209,6 +213,7 @@ func (m *impl) ToProtoV1() *pb.Message {
 			Block:    proto.String(e.Cid.KeyString()),
 			Priority: proto.Int32(int32(e.Priority)),
 			Cancel:   proto.Bool(e.Cancel),
+			Delegate: proto.Bool(e.Delegate),
 		})
 	}
 	pbm.Wantlist.Full = proto.Bool(m.full)

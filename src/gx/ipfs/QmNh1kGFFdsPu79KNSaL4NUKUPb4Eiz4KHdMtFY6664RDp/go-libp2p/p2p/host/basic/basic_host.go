@@ -20,7 +20,7 @@ import (
 	ifconnmgr "gx/ipfs/Qmax8X1Kfahf5WfSB68EWDG3d3qyS3Sqs1v412fjPTfRwx/go-libp2p-interface-connmgr"
 	metrics "gx/ipfs/QmdeBtQGXjSt7cb97nx9JyLHHv5va2LyEAue7Q5tDFzpLy/go-libp2p-metrics"
 	mstream "gx/ipfs/QmdeBtQGXjSt7cb97nx9JyLHHv5va2LyEAue7Q5tDFzpLy/go-libp2p-metrics/stream"
-	"fmt"
+	//"fmt"
 )
 
 var log = logging.Logger("basichost")
@@ -276,7 +276,7 @@ func (h *BasicHost) newStreamHandler(s inet.Stream) {
 		s = mstream.WrapStream(s, h.bwc)
 	}
 	log.Debugf("protocol negotiation took %s", took)
-	fmt.Println("protocol negotiation took %s\n", took)
+	//fmt.Println("protocol negotiation took %s\n", took)
 
 	go handle(protoID, s)
 }
@@ -474,7 +474,7 @@ func (h *BasicHost) resolveAddrs(ctx context.Context, pi pstore.PeerInfo) ([]ma.
 // the connection once it has been opened.
 func (h *BasicHost) dialPeer(ctx context.Context, p peer.ID) error {
 	log.Debugf("host %s dialing %s", h.ID, p)
-	fmt.Printf("loong host %s dialing %s\n", h.ID, p.Pretty())
+	//fmt.Printf("loong host %s dialing %s\n", h.ID, p.Pretty())
 	c, err := h.Network().DialPeer(ctx, p)
 	if err != nil {
 		return err

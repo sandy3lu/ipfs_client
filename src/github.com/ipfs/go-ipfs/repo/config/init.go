@@ -137,7 +137,7 @@ func DefaultDatastoreConfig() Datastore {
 						"compression": "none",
 					},
 				},
-/*
+//*
 				map[string]interface{}{
 					"mountpoint": "/pos",
 					"type":       "measure",
@@ -148,7 +148,7 @@ func DefaultDatastoreConfig() Datastore {
 						"compression": "none",
 					},
 				},
-*/
+//*/
 			},
 		},
 	}

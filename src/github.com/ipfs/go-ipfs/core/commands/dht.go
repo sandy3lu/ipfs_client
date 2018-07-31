@@ -873,8 +873,8 @@ var addTaskDhtCmd = &cmds.Command{//TODO: sandy modified
 			return
 		}
 
-		if numProviders>3 {
-			numProviders =3
+		if numProviders>10 {
+			numProviders =10
 		}
 
 		go func() {

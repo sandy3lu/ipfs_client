@@ -33,6 +33,8 @@ import (
 //	"io/ioutil"
 //	"bufio"
 	"github.com/ipfs/go-ipfs/storageprove"
+	"time"
+	"gx/ipfs/QmPSBJL4momYnE7DcUyk2DVhD6rH488ZmHBGLbxNdhU44K/go-humanize"
 )
 
 const (
@@ -445,6 +447,24 @@ func daemonFunc(req *cmds.Request, re cmds.ResponseEmitter, env cmds.Environment
 
 	go corerepo.CheckForTask(req.Context,node)  //TODO: sandy modified
 	go storageprove.Startheart(node.Identity.Pretty(), req.Context) // TODO: sandy modified
+	go func(){
+		t1 := time.NewTimer(time.Second * 5)
+		for{
+			select{
+			case <-t1.C:
+				bs:= node.Reporter.GetBandwidthTotals()
+				if bs.RateIn > 1000 || bs.RateOut >1000 {
+					// report
+					out := fmt.Sprintf("TotalOut %8s TotalIn %8s RateIn %8s RateOut %8s ", humanize.Bytes(uint64(bs.TotalOut)),humanize.Bytes(uint64(bs.TotalIn)),humanize.Bytes(uint64(bs.RateIn)),humanize.Bytes(uint64(bs.RateOut)))
+					storageprove.ReportNodeStatus(node.Identity.Pretty(), out)
+				}
+				t1.Reset(time.Second * 5)
+			case <-req.Context.Done():
+				return
+			}
+		}
+
+	}()
 	fmt.Printf("Daemon is ready\n")
 	// collect long-running errors and block for shutdown
 	// TODO(cryptix): our fuse currently doesnt follow this pattern for graceful shutdown

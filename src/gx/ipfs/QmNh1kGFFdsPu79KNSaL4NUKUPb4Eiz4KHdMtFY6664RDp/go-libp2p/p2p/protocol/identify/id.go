@@ -138,8 +138,7 @@ func (ids *IDService) RequestHandler(s inet.Stream) {
 
 	log.Debugf("%s sent message to %s %s", ID,
 		c.RemotePeer(), c.RemoteMultiaddr())
-	fmt.Printf("%s sent message to %s %s\n", ID,
-		c.RemotePeer(), c.RemoteMultiaddr())
+	//fmt.Printf("%s sent message to %s %s\n", ID,	c.RemotePeer(), c.RemoteMultiaddr())
 }
 
 func (ids *IDService) ResponseHandler(s inet.Stream) {
@@ -156,8 +155,7 @@ func (ids *IDService) ResponseHandler(s inet.Stream) {
 
 	log.Debugf("%s received message from %s %s", ID,
 		c.RemotePeer(), c.RemoteMultiaddr())
-	fmt.Printf("%s received message from %s %s\n", ID,
-		c.RemotePeer(), c.RemoteMultiaddr())
+	//fmt.Printf("%s received message from %s %s\n", ID,	c.RemotePeer(), c.RemoteMultiaddr())
 }
 
 func (ids *IDService) populateMessage(mes *pb.Identify, c inet.Conn) {
@@ -179,7 +177,7 @@ func (ids *IDService) populateMessage(mes *pb.Identify, c inet.Conn) {
 	for i, addr := range laddrs {
 		mes.ListenAddrs[i] = addr.Bytes()
 	}
-	fmt.Printf("%s sent listen addrs to %s: %s\n", c.LocalPeer(), c.RemotePeer(), laddrs)
+	//fmt.Printf("%s sent listen addrs to %s: %s\n", c.LocalPeer(), c.RemotePeer(), laddrs)
 	log.Debugf("%s sent listen addrs to %s: %s", c.LocalPeer(), c.RemotePeer(), laddrs)
 
 	// set our public key
@@ -240,7 +238,7 @@ func (ids *IDService) consumeMessage(mes *pb.Identify, c inet.Conn) {
 	}
 	ids.addrMu.Unlock()
 
-	fmt.Printf("%s received listen addrs for %s: %s\n", c.LocalPeer(), c.RemotePeer(), lmaddrs)
+	//fmt.Printf("%s received listen addrs for %s: %s\n", c.LocalPeer(), c.RemotePeer(), lmaddrs)
 	log.Debugf("%s received listen addrs for %s: %s", c.LocalPeer(), c.RemotePeer(), lmaddrs)
 
 	// get protocol versions
@@ -407,15 +405,15 @@ func (ids *IDService) consumeObservedAddress(observed []byte, c inet.Conn) {
 		return
 	}
 
-	fmt.Printf("identify identifying observed multiaddr: %s %s\n", c.LocalMultiaddr(), ifaceaddrs)
-	//log.Debugf("identify identifying observed multiaddr: %s %s", c.LocalMultiaddr(), ifaceaddrs)
+	//fmt.Printf("identify identifying observed multiaddr: %s %s\n", c.LocalMultiaddr(), ifaceaddrs)
+	log.Debugf("identify identifying observed multiaddr: %s %s", c.LocalMultiaddr(), ifaceaddrs)
 	if !addrInAddrs(c.LocalMultiaddr(), ifaceaddrs) {
 		// not in our list
 		return
 	}
 
 	// ok! we have the observed version of one of our ListenAddresses!
-	fmt.Printf("added own observed listen addr: %s --> %s\n", c.LocalMultiaddr(), maddr)
+	//fmt.Printf("added own observed listen addr: %s --> %s\n", c.LocalMultiaddr(), maddr)
 	log.Debugf("added own observed listen addr: %s --> %s", c.LocalMultiaddr(), maddr)
 	ids.observedAddrs.Add(maddr, c.RemoteMultiaddr())
 }

@@ -290,6 +290,10 @@ func Init(repoPath string, conf *config.Config) error {
 		return err
 	}
 
+	if err := storageprove.InitProver(repoPath); err != nil{
+		return err
+	}
+
 	return nil
 }
 
@@ -409,11 +413,11 @@ func (r *FSRepo) openDatastore() error {
 		return err
 	}
 	r.ds = d
-	storageprove.SetDataStore(d)
 
 	// Wrap it with metrics gathering
 	prefix := "ipfs.fsrepo.datastore"
 	r.ds = measure.New(prefix, r.ds)
+	storageprove.SetDataStore(d)
 
 	return nil
 }

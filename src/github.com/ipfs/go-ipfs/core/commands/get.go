@@ -232,6 +232,7 @@ func (gw *getWriter) writeArchive(r io.Reader, fpath string) error {
 	defer file.Close()
 
 	fmt.Fprintf(gw.Out, "Saving archive to %s\n", fpath)
+
 	bar, barR := progressBarForReader(gw.Err, r, gw.Size)
 	bar.Start()
 	defer bar.Finish()
@@ -243,9 +244,9 @@ func (gw *getWriter) writeArchive(r io.Reader, fpath string) error {
 func (gw *getWriter) writeExtracted(r io.Reader, fpath string) error {
 	fmt.Fprintf(gw.Out, "Saving file(s) to %s\n", fpath)
 	bar := makeProgressBar(gw.Err, gw.Size)
-	bar.Start()
-	defer bar.Finish()
-	defer bar.Set64(gw.Size)
+	//bar.Start()   // TODO: modified by sandy , to avoid java process blocked
+	//defer bar.Finish()  // TODO: modified by sandy , to avoid java process blocked
+	//defer bar.Set64(gw.Size)  // TODO: modified by sandy , to avoid java process blocked
 
 	extractor := &tar.Extractor{Path: fpath, Progress: bar.Add64}
 	return extractor.Extract(r)

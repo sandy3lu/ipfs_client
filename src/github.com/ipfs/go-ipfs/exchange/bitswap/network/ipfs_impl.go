@@ -70,7 +70,7 @@ func msgToStream(ctx context.Context, s inet.Stream, msg bsmsg.BitSwapMessage) e
 	if dl, ok := ctx.Deadline(); ok {
 		deadline = dl
 	}
-
+    //fmt.Println("bitswap: sending msg to", s.Conn().RemotePeer().String())
 	if err := s.SetWriteDeadline(deadline); err != nil {
 		log.Warningf("error setting deadline: %s", err)
 	}
@@ -113,7 +113,7 @@ func (bsnet *impl) SendMessage(
 	ctx context.Context,
 	p peer.ID,
 	outgoing bsmsg.BitSwapMessage) error {
-
+    //fmt.Println("bitswap: send msg to ", p.String())
 	s, err := bsnet.newStreamToPeer(ctx, p)
 	if err != nil {
 		return err

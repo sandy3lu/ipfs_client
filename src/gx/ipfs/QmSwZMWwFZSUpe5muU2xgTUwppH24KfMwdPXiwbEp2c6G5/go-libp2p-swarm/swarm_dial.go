@@ -182,7 +182,7 @@ func (s *Swarm) Dial(ctx context.Context, p peer.ID) (*Conn, error) {
 	}
 	if !peerIsSN(p) {
 		//debug.PrintStack()
-		fmt.Println("peerID: ", p.Pretty())
+		//fmt.Println("peerID: ", p.Pretty())
 	}
 	return s.gatedDialAttempt(ctx, p)
 }

@@ -22,6 +22,7 @@ type Wantlist struct {
 type Entry struct {
 	Cid      *cid.Cid
 	Priority int
+	Delegate bool
 
 	SesTrk map[uint64]struct{}
 }

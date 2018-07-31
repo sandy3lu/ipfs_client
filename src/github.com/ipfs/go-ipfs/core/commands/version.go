@@ -85,13 +85,13 @@ var VersionCmd = &cmds.Command{
 				return nil, err
 			}
 			if all {
-				out := fmt.Sprintf("go-ipfs version: %s-%s\n"+
+				out := fmt.Sprintf("go-ipfs-leaf version: %s-%s\n"+
 					"Repo version: %s\nSystem version: %s\nGolang version: %s\n",
 					version.Version, version.Commit, version.Repo, version.System, version.Golang)
 				return strings.NewReader(out), nil
 			}
 
-			return strings.NewReader(fmt.Sprintf("ipfs version %s%s\n", version.Version, commitTxt)), nil
+			return strings.NewReader(fmt.Sprintf("ipfs-leaf version %s%s\n", version.Version, commitTxt)), nil
 		},
 	},
 	Type: VersionOutput{},
